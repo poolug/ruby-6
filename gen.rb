@@ -1,11 +1,13 @@
 n = ARGV[0].to_i
 
 def gen(n)
-  v = "a".next
+  suma = ""
+  letra = "a"
   n.times do
-    print v
+    suma += letra
+    letra = letra.next
   end
-  print "\n"
+  print "#{suma}\s"
 end
 
 gen(n)
